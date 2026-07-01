@@ -14,6 +14,7 @@ if nixCats('general') then
 	require('plugins.flash')
 	require('plugins.yazi')
 	require('plugins.neotree')
+	require('lspconfig').marksman.setup{}
 	require("transparent").setup({
 		extra_groups = {
 			"NormalFloat",
