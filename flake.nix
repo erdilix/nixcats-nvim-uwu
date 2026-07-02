@@ -118,6 +118,7 @@
 	  nvim-web-devicons
 	  # trans neovim
 	  transparent-nvim
+	  nvim-lspconfig
 	];
       };
 
