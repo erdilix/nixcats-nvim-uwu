@@ -7,6 +7,7 @@ vim.opt.relativenumber = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.lsp.enable("marksman")
 -- Check if the 'general' category is enabled (it is in the flake.nix)
 if nixCats('general') then
 --	require('plugins.treesitter')
@@ -14,7 +15,6 @@ if nixCats('general') then
 	require('plugins.flash')
 	require('plugins.yazi')
 	require('plugins.neotree')
-	require('lspconfig').marksman.setup{}
 	require("transparent").setup({
 		extra_groups = {
 			"NormalFloat",
